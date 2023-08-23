@@ -1,14 +1,24 @@
-version: '3.7'
+version: '3.8'
 services:
-  mysql:
-    image: mysql:8.0
+  d_mysql:
+    image: mysql:latest
     ports:
-      - '3306:3306'
+      - 3306:3306
     volumes:
-      - ./data:/var/lib/mysql
+      - ./data_mysql:/var/lib/mysql
     environment:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
       - MYSQL_DATABASE=app
       - MYSQL_USER=app
       - MYSQL_PASSWORD=pass
-
+  node:
+    image: "node"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./gate-simulator:/home/node/app
+    ports:
+      - 9999:9999
+    command: "npm start"

@@ -21,6 +21,7 @@ node_modules
 *.ipr
 out/
 data/
+data_mysql/
 
 ### NetBeans ###
 /nbproject/private/
