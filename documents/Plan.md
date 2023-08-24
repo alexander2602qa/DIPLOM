@@ -15,7 +15,7 @@
 5 | Ввести «Ivan Ivanov» в поле «Владелец» | В поле отображается введённое имя и фамилия
 6 | Ввести «555» в поле «CVC/CVV» | В поле отображается введённое значение 
 7 | Нажать кнопку «Продолжить» | Текст кнопки «Продолжить» изменился на «Отправляем запрос в банк...». Затем справа сверху появился блок с текстом «Операция одобрена банком», а над ним текст «Успешно». После этого текст кнопки обратно изменился на «Продолжить» 
-8 | Сделать запрос в БД приложения и получить payment_id из order_entity и transaction_id в payment_entity, а также значения status и amount в payment_entity | payment_id из order_entity совпадает с transaction_id в payment_entity. status в payment_entity = APPROVER, а amount = 4 500 000
+8 | Сделать запрос в БД приложения и получить payment_id из order_entity и transaction_id в payment_entity, а также значения status и amount в payment_entity | payment_id из order_entity совпадает с transaction_id в payment_entity. status в payment_entity = APPROVED, а amount = 4 500 000
 - Постусловие: Очистить все таблицы в базе данных
 
 
@@ -35,7 +35,7 @@
 5 | Ввести «Ivan Ivanov» в поле «Владелец» | В поле отображается введённое имя и фамилия
 6 | Ввести «555» в поле «CVC/CVV» | В поле отображается введённое значение 
 7 | Нажать кнопку «Продолжить» | Текст кнопки «Продолжить» изменился на «Отправляем запрос в банк...». Затем справа сверху появился блок с текстом «Операция одобрена банком», а над ним текст «Успешно». После этого текст кнопки обратно изменился на «Продолжить» 
-8 | Сделать запрос в БД приложения и получить payment_id из order_entity и bank_id в credit_request_entity, а также значения status в payment_entity | payment_id из order_entity совпадает с bank_id в credit_request_entity. status в credit_request_entity = APPROVER.
+8 | Сделать запрос в БД приложения и получить payment_id из order_entity и bank_id в credit_request_entity, а также значения status в payment_entity | payment_id из order_entity совпадает с bank_id в credit_request_entity. status в credit_request_entity = APPROVED.
 - Постусловие: Очистить все таблицы в базе данных
 
 ---
@@ -283,7 +283,7 @@ ID: 12
 5 | Ввести «Ivan Ivanov» в поле «Владелец» | В поле отображается введённое имя и фамилия
 6 | Ввести «555» в поле «CVC/CVV» | В поле отображается введённое значение 
 7 | Нажать кнопку «Продолжить» | Текст кнопки «Продолжить» изменился на «Отправляем запрос в банк...». Затем справа сверху появился блок с текстом «Операция одобрена банком», а над ним текст «Успешно». После этого текст кнопки обратно изменился на «Продолжить» 
-8 | Сделать запрос в БД приложения и получить payment_id из order_entity и transaction_id в payment_entity, а также значения status и amount в payment_entity | payment_id из order_entity совпадает с transaction_id в payment_entity. status в payment_entity = APPROVER, а amount = 4 500 000
+8 | Сделать запрос в БД приложения и получить payment_id из order_entity и transaction_id в payment_entity, а также значения status и amount в payment_entity | payment_id из order_entity совпадает с transaction_id в payment_entity. status в payment_entity = APPROVED, а amount = 4 500 000
 - Постусловие: Очистить все таблицы в базе данных
 
 ---
